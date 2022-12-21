@@ -4,7 +4,7 @@ import Card from "../../components/UI/Card"
 import "./Cart.css";
 import CartContext from "./CartContext";
 
-// const cartElements = 
+// const cartArr = 
 //     [
 //         {
 //             title: 'Colors',
@@ -35,7 +35,7 @@ const Cart = props =>
                 <div className="itemList">
                     <img className="image" src={item.imageUrl} alt=""></img>
                     <div className="title-Price-Quantity">{item.title}</div>
-                    <div className="title-Price-Quantity">{`Rs${item.price}`}</div>
+                    <div className="title-Price-Quantity">{`Rs.${item.price}`}</div>
                     <div className="title-Price-Quantity">{item.quantity}</div>
                     <button onClick={() =>
                             crtCtx.removeItem({
