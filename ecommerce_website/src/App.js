@@ -9,6 +9,7 @@ import { Route,Switch } from "react-router-dom";
 import CartProvider from "./components/Cart/CartProvider";
 import Home from "./components/Pages/Home";
 import About from "./components/Pages/About";
+import Contact from "./components/Pages/ContactUs";
 
 const App = () => {
 
@@ -72,6 +73,9 @@ const App = () => {
           <ProductDetail product={product}/>
         </Route>
       </Switch>
+      <Route path='/Contact'>
+        <Contact />
+      </Route>
       <Footer />  
     </CartProvider>
   );
