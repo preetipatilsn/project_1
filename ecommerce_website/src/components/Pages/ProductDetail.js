@@ -6,7 +6,7 @@ const ProductDetail = props =>
     const crtCtx = useContext(CartContext)
     return(
         <section>
-            <div>This is Detail Page</div>
+        <div>This is Products details Page</div>
             <p>{props.product.title}</p>
             <img src={props.product.imageUrl} alt=" "></img> 
             <p>Rs {props.product.price}</p>
@@ -30,10 +30,11 @@ const ProductDetail = props =>
                 borderRadius:'5px',
                 marginLeft:'30px'
               }}
-
             >
-              Add TO Cart
-            </button>
+              Add To Cart
+        </button>
+        <h1>Reviews</h1>
+        <p>Good one!</p>
         </section>
     )
 };

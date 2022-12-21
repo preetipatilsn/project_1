@@ -9,11 +9,18 @@ const Contact  = (props)=>{
             Phone: event.target[2].value,
         };
 
-        const response = await fetch('https://ecommercecontactuspage-default-rtdb.firebaseio.com/contacts.json',{
-          method:'POST',
-          body:JSON.stringify(user)
-        })
-    };
+        const response = await fetch('https://ecommercecontactuspage-default-rtdb.firebaseio.com/contacts.json',
+        {
+          method: "POST",
+          body: JSON.stringify(user),
+          headers: {
+            "Content-type": "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      console.log(data);
+}
 
     return(
         <div className={classes.div}>
