@@ -1,0 +1,58 @@
+.headerNav {
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  color: whitesmoke;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+}
+
+/* .hr {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+} */
+
+.headerButton:hover {
+  font-style: italic;
+  color: lightskyblue;
+}
+
+.headerButton {
+  background-color: black;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  /* border: 2.5px solid whitesmoke;*/
+}
+
+.headerButton:active,
+.headerButton.active {
+  font-weight: bold;
+  color: lightskyblue;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid lightskyblue;
+}
+
+.cartButton {
+  float: right;
+  border: 3px solid blue;
+  background-color: black;
+  border-radius: 10px;
+  font-size: larger;
+  color: white;
+}
+
+.cartCount {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: wheat;
+  border-radius: 10px;
+  margin-left: 10px;
+}
